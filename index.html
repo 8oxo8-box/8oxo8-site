@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>8oxo8</title>
-<style>
-body{background:#000;color:#fff;font-family:-apple-system, sans-serif;padding:40px;display:flex;flex-direction:column;align-items:center}
-h1{text-align:center;letter-spacing:6px;font-weight:300;width:100%;margin-bottom:60px}
-section{width:100%;max-width:1100px;margin-bottom:80px}
-h2{text-align:center;letter-spacing:4px;font-weight:300;margin-bottom:20px}
-table{width:100%;table-layout:fixed;border-spacing:0 14px;border-collapse:collapse}
-th,td{text-align:center;padding:20px;width:auto;overflow:hidden}
-a{color:#fff;text-decoration:none}
-.footer{text-align:center;opacity:.5;margin-top:120px;width:100%}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8OXO8 — Spécifications Système & Architecture</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #e1e1e1;
+      --text-muted: #777777;
+      --border: #1a1a1a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 6px;
+      color: #ffffff;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .logo-img {
+      width: 520px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+      display: block;
+      mix-blend-mode: screen; /* Fusionne le fond noir de l'image avec le fond noir de la page pour effacer les bords */
+    }
+
+    .hero-email {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+
+    .hero-email a {
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 2px;
+      transition: border-color 0.3s;
+    }
+
+    .hero-email a:hover {
+      border-color: #ffffff;
+    }
+  </style>
 </head>
 <body>
 
-<h1>8oxo8</h1>
-
-<section>
-<h2>air</h2>
-<table>
-<thead><tr></tr></thead>
-<tbody><tr><td>dies</td><td>nox</td><td>lux</td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>4</td><td>8</td></tr><tr><td>3</td><td>9</td><td>27</td></tr><tr><td>5</td><td>25</td><td>125</td></tr><tr><td>8</td><td>64</td><td>512</td></tr><tr><td>13</td><td>169</td><td>2 197</td></tr><tr><td>21</td><td>441</td><td>9 261</td></tr><tr><td>34</td><td>1156</td><td>39304</td></tr><tr><td>55</td><td>3025</td><td>166375</td></tr><tr><td>89</td><td>7921</td><td>704969</td></tr><tr><td>144</td><td>20736</td><td>2985984</td></tr><tr><td>233</td><td>54289</td><td>12649337</td></tr><tr><td>377</td><td>142129</td><td>53582633</td></tr><tr><td>610</td><td>372100</td><td>226981000</td></tr><tr><td>987</td><td>974169</td><td>961504803</td></tr><tr><td>1597</td><td>2550409</td><td>4073003173</td></tr><tr><td>2584</td><td>6677056</td><td>17253512704</td></tr><tr><td>4181</td><td>17480761</td><td>73087061741</td></tr><tr><td>6765</td><td>45765225</td><td>309601747125</td></tr><tr><td>10946</td><td>119814916</td><td>1311494070536</td></tr><tr><td>17711</td><td>313679521</td><td>5555577996431</td></tr><tr><td>28657</td><td>821223649</td><td>23533806109393</td></tr><tr><td>46368</td><td>2149991424</td><td>99690802348032</td></tr><tr><td>75025</td><td>5628750625</td><td>422297015640625</td></tr><tr><td>121393</td><td>14736260449</td><td>1788878864685457</td></tr><tr><td>196418</td><td>38580030724</td><td>7577812474746632</td></tr><tr><td>317811</td><td>101003831721</td><td>32099924934987731</td></tr><tr><td>514229</td><td>264431464441</td><td>135978223981760489</td></tr><tr><td>832040</td><td>692290561600</td><td>576013499181440000</td></tr><tr><td>1346269</td><td>1812440220361</td><td>2440032080348781929</td></tr><tr><td>2178309</td><td>4745030101481</td><td>10336142849548604629</td></tr></tbody>
-</table>
-</section>
-
-<div class="footer">
-<a href="mailto:air@8oxo8.com?subject=8oxo8">air@8oxo8.com</a>
-</div>
+  <main class="hero">
+    <h1>8OXO8</h1>
+    <img src="8oxo8 (10).png" alt="8OXO8 Logo" class="logo-img">
+    <div class="hero-email">
+      <a href="mailto:air@8oxo8.com">air@8oxo8.com</a>
+    </div>
+  </main>
 
 </body>
 </html>
