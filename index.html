@@ -53,7 +53,9 @@
       height: auto;
       margin-bottom: 24px;
       display: block;
-      mix-blend-mode: screen; /* Fusionne le fond noir de l'image avec le fond noir de la page pour effacer les bords */
+      /* Masque resserré pour éliminer net le rectangle tout en gardant ton image d'origine */
+      -webkit-mask-image: radial-gradient(circle 48% at 50% 50%, black 70%, transparent 85%);
+      mask-image: radial-gradient(circle 48% at 50% 50%, black 70%, transparent 85%);
     }
 
     .hero-email {
